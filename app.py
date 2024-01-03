@@ -38,7 +38,7 @@ def create_bar(ingredients=['alcohol', 'malic_acid', 'ash']):
     return bar
 
 app = Dash(__name__, external_stylesheets=external_stylesheets, title='final-project', suppress_callback_exceptions=True)
-
+server=app.server
 # App layout
 data_page1 = {'content': 'Page 1 Content'}
 data_page2 = {'content': 'Page 2 Content'}
